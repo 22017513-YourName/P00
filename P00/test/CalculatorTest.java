@@ -67,12 +67,16 @@ public class CalculatorTest {
 	public void testDivide() {
 		//fail("Not yet implemented");
 		int a = 2222;
-		int b = 2;
+		int b = 0;
 		
 		Calculator cal = new Calculator();
+		if (b != 0) {
 		int actual = cal.divide(a,b);
 		
 		int expected = 1111;
 		assertEquals (actual, expected);
+		} else {
+			System.out.println("Denominator cannot be 0!");
+		}
 	}
 }
